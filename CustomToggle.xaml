@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="YourNamespace.CustomToggle"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             MouseLeftButtonDown="UserControl_MouseLeftButtonDown"
+             Width="100" Height="40">
+
+    <Canvas>
+        <!-- Фон переключателя (овальный) -->
+        <Rectangle Name="ToggleBackground"
+                   Width="100" Height="40"
+                   Fill="Gray"
+                   RadiusX="20" RadiusY="20" />
+
+        <!-- Индикатор (кружок), который будет двигаться -->
+        <Ellipse Name="ToggleIndicator"
+                 Width="40" Height="40"
+                 Fill="White"
+                 Canvas.Top="0"
+                 Canvas.Left="0" />
+    </Canvas>
+</UserControl>
